@@ -1,5 +1,12 @@
-# by 李依闰
-# Is my own code by a clever boy luo luo luo luo luo luo
+# by a LiYiRun
+# Is my own code by a clever boy luo luo luo luo luo luo 
+
+# The animation engine is 3b1b manim
+
+#Use animation outside the engine: WriteRamdon and UnWriteRamdon
+
+# Used a geometry tool
+
 from manimlib.imports import *
 # from manim_sandbox.utils.imports import *
 
