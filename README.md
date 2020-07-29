@@ -114,6 +114,7 @@ ffmpeg -i "concat:video1.ts|video2.ts" -c copy video.mp4
 \usepackage{physics}
 \usepackage{xcolor}
 \usepackage{microtype}
+\usepackage{mhchem}
 \DisableLigatures{encoding = *, family = * }
 %\usepackage[UTF8]{ctex}
 \linespread{1}
