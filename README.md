@@ -795,8 +795,6 @@ def get_camera_configuration(args):
             print(err)
             sys.exit(2)
 
-    # If rendering a transparent image/move, make sure the
-    # scene has a background opacity of 0
     if args.transparent:
         camera_config["background_opacity"] = 0
 
@@ -809,7 +807,7 @@ def get_camera_configuration(args):
 
 ## 视频引用文件
 
-`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py`并重命名为` import *`\
+`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py` ` import *`\
 `import` 引用[Elteoremadebeethoven](https://github.com/Elteoremadebeethoven)的[WriteRandom](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L48)和[UnWriteRamdon](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L62) 并重命名为`to_draw.py`
 
 ## 视频音乐
