@@ -1,9 +1,9 @@
 # 视频渲染
 视频由基于[python](https://www.python.org)开源数学动画引擎 [manim](https://github.com/3b1b/manim)库 渲染\
 \
-环境依赖 :[ffmpeg](https://www.ffmpeg.org), [miktex](https://miktex.org), [sox](http://sox.sourceforge.net)\
+环境依赖: [ffmpeg](https://www.ffmpeg.org), [miktex](https://miktex.org), [sox](http://sox.sourceforge.net)\
 \
-其实还有[pycairo](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo)
+当然还有[pycairo](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo)
 # 安装manim引擎
 ## 注意
 当进行
