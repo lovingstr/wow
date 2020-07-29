@@ -94,7 +94,7 @@ ffmpeg -i "concat:video1.ts|video2.ts" -c copy video.mp4
 
 ## 视频引用文件
 
-`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py`并重命名为` import *`\
+`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py` ` import *`\
 `import` 引用[Elteoremadebeethoven](https://github.com/Elteoremadebeethoven)的[WriteRandom](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L48)和[UnWriteRamdon](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L62) 并重命名为`to_draw.py`
 
 ## 视频音乐
