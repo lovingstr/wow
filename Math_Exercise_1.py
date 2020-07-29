@@ -289,7 +289,7 @@ class Choice_1(Scene):
 
         # number_angle = Integer(0, fill_color=BLACK).scale(.24)
         # number_angle.add_updater(lambda x: number_angle.set_value(line2.get_angle() / PI * 180))
-        left_value = TexMobject('My QQ is 482970284').add_updater(lambda t:
+        left_value = TexMobject('My QQ is 3515674727').add_updater(lambda t:
                                                                   t.become(
                                                                       TexMobject('%.1f^{\\circ}' %
                                                                                  (line2.get_angle() * 180 / PI),
