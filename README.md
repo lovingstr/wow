@@ -6,7 +6,7 @@
 当然其实还有[pycairo](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycairo)
 # 安装manim引擎
 ## 注意
-当进行
+当安装进行到
 ```
 python -m pip install -r requirements.txt
 ```
@@ -14,6 +14,11 @@ python -m pip install -r requirements.txt
 ```
 pip install -r requirements.txt
 ```
+\
+这一步时\
+\
+\
+\
 打开`requirements.txt`\
 将
 ```
@@ -45,7 +50,9 @@ pygments
 pyreadline; sys_platform == 'win32'
 ```
 \
-不过建议不要自己研究\
+以免报错\
+\
+不过建议不要自己研究[md](https://github.com/3b1b/manim/blob/master/README.md)\
 推荐[MK官方](https://manim.ml/)文档 的安装[教程](https://manim.ml/problems/v2.3.html#)
 
 # 测试 & 渲染
@@ -114,7 +121,6 @@ ffmpeg -i "concat:video1.ts|video2.ts" -c copy video.mp4
 \usepackage{physics}
 \usepackage{xcolor}
 \usepackage{microtype}
-\usepackage{mhchem}
 \DisableLigatures{encoding = *, family = * }
 %\usepackage[UTF8]{ctex}
 \linespread{1}
@@ -796,33 +802,46 @@ def get_camera_configuration(args):
             print(err)
             sys.exit(2)
 
+    # If rendering a transparent image/move, make sure the
+    # scene has a background opacity of 0
     if args.transparent:
         camera_config["background_opacity"] = 0
 
     return camera_config
 ```
 # 
-## 
+## 视频音乐
+用`ffmpeg`啊\
+bgm爱用什么用什么`🤣`
+# 关于
 ## 视频风格
-视频风格仿照MK官方给出的示例代码
+视频风格仿照MK官方给出的示例代码\
+我也就是为了练习manim的😂\
+反正又没有商用, [管他呢](https://这可不是网址)(划去)
+
 
 ## 视频引用文件
 
-`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py` ` import *`\
+`from `[我是害羞的向量](https://space.bilibili.com/215499610)写的`几何沙雕bug修复版.py`并重命名为` import *`\
 `import` 引用[Elteoremadebeethoven](https://github.com/Elteoremadebeethoven)的[WriteRandom](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L48)和[UnWriteRamdon](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L62) 并重命名为`to_draw.py`
+## 关于字体
 
-## 视频音乐
-爱用什么用什么`🤣`
+我没有`思黑源体 CN BOLD`这个字体, 但是为了体现出视频风格是仿照的\
+所以没改成`思黑源体 CN BOLD`(就是懒得改)\
+但是里面有一些特殊符号(如`°`、`∠`、`△`)\
+目测思黑好像不兼容\
+建议把代码中的所有`思黑源体 CN BOLD`删去`😆`
 
-# 关于
+## 关于作者
+
 本人是一名爱好数学与编程的男孩\
 本视频关于的是为本县(市)2019-2020学年初二数学期末考卷\
 如爱好数学者, 可加入
 我的数学[讨论Q群](https://jq.qq.com/?_wv=1027&k=HS2d1hsW) @_2,~0\_.making \
 当然, 本人一个初二的, 回答不了什么问题 \
-但是有需要尽管问(不是说回答不了什么吗😉) ([本人](https://user.qzone.qq.com/3515674727)qq3515674727)\
+但是有需要尽管问  (回答不了什么😉) ([本人](https://user.qzone.qq.com/3515674727)qq3515674727)\
 [群问题](http://paste.ubuntu.com/p/3MDRrBtYNv/) (马上会改) \
-[沙逼吉祥物](https://user.qzone.qq.com/1776471067) 
+[沙🖊笔吉祥物](https://user.qzone.qq.com/1776471067) 
 # 文档
 如若文档有错误, 不喜勿喷
 
