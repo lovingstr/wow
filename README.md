@@ -826,11 +826,11 @@ bgm爱用什么用什么`🤣`
 `import` 引用[Elteoremadebeethoven](https://github.com/Elteoremadebeethoven)的[WriteRandom](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L48)和[UnWriteRamdon](https://github.com/Elteoremadebeethoven/MyAnimations/blob/master/my_projects/my_projects2.py#L62) 并重命名为`to_draw.py`
 ## 关于字体
 
-我没有`思黑源体 CN BOLD`这个字体, 但是为了体现出视频风格是仿照的\
-所以没改成`思黑源体 CN BOLD`(就是懒得改)\
+我没有`思源黑体 CN BOLD`这个字体, 但是为了体现出视频风格是仿照的\
+所以没改成`思源黑体 CN BOLD`(就是懒得改)\
 但是里面有一些特殊符号(如`°`、`∠`、`△`)\
 目测思黑好像不兼容\
-建议把代码中的所有`思黑源体 CN BOLD`删去`😆`
+建议把代码中的所有`思源黑体 CN BOLD`删去`😆`
 
 ## 关于作者
 
