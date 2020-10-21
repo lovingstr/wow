@@ -1,0 +1,109 @@
+from manimlib.imports import *
+from luoluoluo_useful.imports import *
+from manim_sandbox.utils.scenes.bilibili import *
+
+class SourceHansfont(Text):
+    CONFIG = {
+        "font": "思源黑体",
+    }
+
+
+class What_is_AG(Scene):
+    CONFIG = {
+        "name": "luoluoluo"
+    }
+
+    def construct(self):
+        self.play(FadeIn(self.captions_mob[0]))
+        self.play(Write(self.SceneCaption[0].set_color([BLUE, GREEN])))
+
+        self.SceneCaption[1: 7].scale(.8).set_colors_by_radial_gradient(radius=3.45, inner_color="#5BF0FF", outer_color="#90FF54")
+
+        self.wait(4.)
+
+        self.play(ReplacementTransform(self.SceneCaption[0], self.SceneCaption[1]))
+        self.wait(4.)
+
+        self.play(ReplacementTransform(self.captions_mob[0], self.captions_mob[1]))
+        self.play(ShowPassingFlashAround(self.captions_mob[1], surrounding_rectangle_config=dict(color="#FF5136")))
+
+        self.wait(4.)
+
+        self.play(ReplacementTransform(self.captions_mob[1], self.captions_mob[2]))
+
+        self.play(Write(self.SceneCaption[2]), run_time=8)
+        self.wait()
+        self.play(Write(self.SceneCaption[3]), run_time=8)
+        self.play(to_draw.WriteRandom(*self.SceneCaption[4]), run_time=8)
+        self.wait()
+        self.play(to_draw.ShrinkButNotToCenterRandom(*self.SceneCaption[5]), run_time=8)
+        self.wait()
+        self.play(ShowPassingFlashAround(self.captions_mob[1], surrounding_rectangle_config=dict(color="#FF5136")))
+        self.wait()
+        self.play(ReplacementTransform(self.SceneCaption[1: 6], self.SceneCaption[6]))
+        self.wait(4.)
+        self.wait()
+
+    def setup(self):
+        self.set_cap()
+        self.set_caption_on()
+        self.set_scene_S_captions()
+
+    def set_caption_on(self, t2c={}):
+        self.captions_mob = VGroup(
+            *[
+                SourceHansfont(cap, tex_to_color_map=t2c).to_edge(DOWN * 1.2).scale(.7)
+                .set_color_by_gradient("#65E2FF", "#5DFF77", "#FFF470", "#50B2FF", "#D6BAFF", "#66ccff")
+                .add_background_rectangle(color="", buff=0.1, opacity=0.85)
+                for cap in self.caps
+            ]
+        )
+
+    def set_scene_S_captions(self):
+        scececap = [r"\text{若}x_1,x_2,...,x_n \in R&, n \in N_+\\\text{则}&\quad{x_1+x_2+...+x_n\over n}\ge \sqrt[n]{x_1x_2...x_n} ",
+                    r"\text{证明:}\text{记}A_n=x_1+x_2+...+x_n, G_n=\sqrt[n]{x_1x_2...x_n} \qquad \qquad (n\in N_+)",
+                    r"\text{当}n=1\text{时}A_1 = G_1",
+                    r"\text{当}n=k\text{时成立}, \text{设}n=k+1\text{时最大的数为}x_{k+1}",
+                    r"\text{则}:A_{k+1}^{k+1}=({kA_k+x_{k+1} \over k+1})^{k+1}=(A_k+{x_{k+1}-A_k \over k+1})^{k+1}\ge A_k^kx_{k+1}",
+                    r"\text{即}A_{k+1}^{k+1}\ge A_k^kx_{k+1} \to "
+                    r"A_{k+1}^{k+1}\ge A_k^kx_{k+1}\ge G^k_kx_{k+1}=G_{k+1}^{k+1} \to A_k\ge G_k",
+                    r"\quad{x_1+x_2+...+x_n\over n}\ge \sqrt[n]{x_1x_2...x_n}\\\qquad \qquad (x_1,x_2,...,x_n \in R, n \in N_+)"]
+        t2c = dict()
+        self.SceneCaption = VGroup(
+            *[
+                TexMobject(cap, tex_to_color_map=t2c)
+                for cap in scececap
+            ]
+        )
+        self.set_123(self.SceneCaption, start=1, end=6, direction=DOWN, buff=MED_LARGE_BUFF)
+        self.SceneCaption[1: 6].move_to(ORIGIN)
+
+    def set_123(self, captions, start=0, end=None, **kwargs):
+        for x in range(start, len(captions) - 1 if end in [None] else end - 1):
+            captions[x + 1].next_to(captions[x], **kwargs)
+        return captions[start: len(captions) if end in [None] else end].copy()
+
+
+    def change_cap(self):
+        pass
+
+    def set_cap(self):
+        self.caps = ["A-G不等式: 正数的算数平均值不小于它们的几何平均值",
+                     "我们使用数学归纳法证明",
+                     ""]
+        self.change_cap()
+
+
+class Three_necessary(TripleScene):
+    def setup(self):
+        self.wait()
+        text = SourceHansfont("视频作者: 洛洛洛-洛洛洛_dx        bgm:Alexis Ffrench - Karma").set_color_by_gradient("#42C5FF",
+                                                                                        "#54FDFF")
+
+        self.play(Write(text))
+        self.wait(3.)
+        self.play(to_draw.SpinOutToNothing(text=text))
+
+
+
+
