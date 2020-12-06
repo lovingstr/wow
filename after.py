@@ -296,26 +296,7 @@ class last(TripleScene2):
         self.play(to_draw.SpinOutToNothing(text=text))
 
 
-class T(Scene):
-    def construct(self):
-        color_dict1 = {"e^": "#71D9DD", "{\\theta": "#729DDD", "\\theta": "#729DDD", "\\cos": BLUE_B, "i}": GREEN,
-                       "i": GREEN,
-                       "\\sin": BLUE_D, "{\\alpha": "#729DDD", "\\alpha": "#729DDD", "{\\beta": "#729DDD",
-                       "\\beta": "#729DDD",
-                       "+": "#84DDC8", "-": "#84DDC8"}
-        font_dict1 = {"e^": "e", "{\\theta": "θ", "i}": "i", "\\theta": "θ", "\\cos": "cos", "\\sin": "sin",
-                      "{\\alpha": "α",
-                      "\\alpha": "α", "{\\beta": "β", "\\beta": "β", "\\cdot": "·", "\\\\": "\n"}
-        EulerFormula6 = MyText("\\cos", "(", "\\alpha", ")", "\\cos", "(", "\\beta", ")", "-", "\\sin", "(", "\\alpha",
-                               ")", "\\sin", "(", "\\beta", ")",
-                               "+", "i}", "(",
-                               "\\sin", "(", "\\alpha", ")", "\\cos", "(", "\\beta", ")", "+", "\\cos", "(", "\\alpha",
-                               ")", "\\sin", "(", "\\beta", ")",
-                               ")",
-                               default_font="思源黑体", color=WHITE)
-        EulerFormula6_SourceHansfont = EulerFormula6.set_color_by_tex_to_color_map(color_dict1) \
-            .get_new_font_texs(font_dict1)
-        self.add(EulerFormula6_SourceHansfont)
+
 
 
 
