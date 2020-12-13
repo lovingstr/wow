@@ -403,7 +403,7 @@ class Question214(Question213):
 
 class Last02(TripleScene2):
     CONFIG = {
-        "words": "制作: by bilibili.洛洛洛-洛洛洛_dx,\n\n 剪辑: by bilibili.zhengyang051119Alexis \n\nbgm: Ffrench - Being Again、I'll Fly Away、Verde"
+        "words": "制作: by bilibili.洛洛洛-洛洛洛_dx,\n\n 剪辑: by bilibili.zhengyang051119 \n\nbgm: Ffrench - Being Again、I'll Fly Away、Verde"
     }
 
     def setup(self):
